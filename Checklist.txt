@@ -1,0 +1,57 @@
+📌 BOOMship - Checklist de Desarrollo
+======================================
+
+🧱 Base del juego
+--------------------
+[X] Crear tablero de juego (grilla)
+[ ] Implementar sistema drag & drop para colocar piezas
+[ ] Mostrar PNG encima de cada celda ocupada
+[ ] Botón “Iniciar juego” que:
+    [ ] Valide la colocación de piezas
+    [ ] Randomice las piezas del oponente
+    [ ] Inicie el sistema de turnos
+
+🎮 Lógica de juego
+---------------------
+[ ] Randomizer para ubicar piezas del oponente automáticamente
+[ ] Sistema de turnos jugador vs CPU (o jugador 2)
+[ ] Manejo de impactos, fallos y destrucción de barcos
+[ ] Sistema de verificación de victoria o derrota
+
+📊 Sistema de dificultad
+---------------------------
+[ ] Selector de dificultad antes de comenzar:
+    [ ] Fácil (movimientos aleatorios)
+    [ ] Medio (prioriza sectores dañados)
+    [ ] Difícil (detecta patrones, persigue objetivos)
+
+🖥️ Interfaz (HUD)
+---------------------
+[ ] Lado derecho:
+    [X] Lista visual de piezas disponibles
+    [ ] Power-ups generales disponibles
+[ ] Lado izquierdo:
+    [X] Imagen del personaje elegido
+    [ ] Área para mostrar efectos de power-up activo
+[ ] Parte superior:
+    [ ] Cuadro PNG del personaje oponente o estado del turno
+
+💣 Personajes y Power-Ups
+------------------------------
+[ ] Sistema de personajes jugables:
+    [X] Nombre
+    [X] Imagen
+    [X] Power-up único [Donald Trump: Reposiciona aleatoriamente todas las piezas no dañadas del jugador]
+[ ] Power-ups generales del juego:
+    [ ] Radar (revela zona aleatoria)
+    [ ] Ataque doble (2 tiros en un turno)
+    [ ] Reparación (cura parte de un barco dañado y lo reposiciona en una ubicación aleatoria)
+[ ] Mecanismo de carga de power-up (daño recibido)
+[ ] Efectos visuales al activar power-ups
+
+✨ Extras 
+-------------------------------------
+[ ] Animaciones de explosiones, pantalla temblando, etc.
+[ ] Diálogos 
+[ ] Música de fondo y efectos sonoros personalizados
+
