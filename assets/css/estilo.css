@@ -1,0 +1,113 @@
+body{
+    background-image: url(../img/Background-Sea.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Pirata One", system-ui;
+    text-shadow: black 3px 1px 2px;
+    color: white;
+
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    width: max-content;
+    margin: 20px auto;
+    border: 2px solid #000000;
+  }
+  
+  .celda {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  
+  .celda:hover {
+    background-color: #bbb;
+    cursor: pointer;
+  }
+
+  #contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #inventario {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+  }
+  
+  .piezaXL img {
+    width: 40px; /* Puedes ajustar el tamaño de la imagen */
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .piezaL img {
+    width: 40px; /* Puedes ajustar el tamaño de la imagen */
+    height: 160px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .piezaM img {
+    width: 40px; /* Puedes ajustar el tamaño de la imagen */
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .piezaS img {
+    width: 40px; /* Puedes ajustar el tamaño de la imagen */
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  #contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+    #inventario{
+        border: 2px solid #333;
+        background-image: url(../img/Background-Wood.png);
+        background-size: cover;
+    }
+
+#tablero-header{
+    background-image: url(../img/Background-Wood.png);
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+#jugador{
+    background-image: url(../img/Background-Wood.png);
+    background-size: cover;
+    border: 2px solid #000000;
+}
+
+#Characters {
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1); /* Flips the image horizontally */
+}

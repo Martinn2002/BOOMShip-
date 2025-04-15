@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOMship!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            
+            <div class="col-6 text-start">
+                <img class="logo" src="assets/img/BOOMShip!.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 align-items-end" id="jugador">
+                <h3 class="mb-5 mt-3 text-center" id="jugador-header">Captain Donald Trump</h3>
+                <img id="Characters" src="assets/img/Character-1.png" alt="">
+            </div>
+            
+            <div class="col-6">
+                <h3 id="tablero-header">Tu Tablero</h3>
+                <section class="mt-5" id="tablero"></section>
+            </div>
+            <div class="col-3">
+                <div class="d-flex flex-row" id="inventario">
+                    <div class="piezaXL" id="piezaXL" draggable="true">
+                      <img src="assets/img/XL-Ship.png" alt="Pieza 1" />
+                    </div>
+                    <div class="piezaL" id="piezaL" draggable="true">
+                      <img src="assets/img/L-Ship.png" alt="Pieza 2" />
+                    </div>
+                    <div class="piezaM" id="piezaM" draggable="true">
+                      <img src="assets/img/M-Ship.png" alt="Pieza 3" />
+                    </div>
+                    <div class="piezaS" id="piezaS" draggable="true">
+                        <img src="assets/img/S-Ship.png" alt="Pieza 3" />
+                      </div>
+                  </div>
+            </div>
+        </div> 
+        </div>
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
