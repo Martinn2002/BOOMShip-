@@ -22,12 +22,31 @@ body{
     width: 40px;
     height: 40px;
     background-color: #ddd;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     position: relative;
     transition: background-color 0.2s;
   }
+
   
+  .celda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .celda.vacia {
+    background-color: #ddd;
+  }
+
+  .celda.ocupada:hover {
+    background-color: #444;
+  }
+  
+  .celda.ocupado {
+    background-color: #444;
+  }
+
   .celda:hover {
     background-color: #bbb;
     cursor: pointer;
@@ -40,36 +59,24 @@ body{
     align-items: flex-start;
   }
   
-  #inventario {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 10px;
-  }
+  /* Removed duplicate #contenedor definition */
   
-  .piezaXL img {
+  .pieza img {
     width: 40px; /* Puedes ajustar el tamaño de la imagen */
-    height: 200px;
     object-fit: cover;
     cursor: pointer;
+  }
+  .piezaXL img {
+    height: 200px;
   }
   .piezaL img {
-    width: 40px; /* Puedes ajustar el tamaño de la imagen */
     height: 160px;
-    object-fit: cover;
-    cursor: pointer;
   }
   .piezaM img {
-    width: 40px; /* Puedes ajustar el tamaño de la imagen */
     height: 120px;
-    object-fit: cover;
-    cursor: pointer;
   }
   .piezaS img {
-    width: 40px; /* Puedes ajustar el tamaño de la imagen */
     height: 80px;
-    object-fit: cover;
-    cursor: pointer;
   }
   
   #contenedor {
@@ -109,5 +116,12 @@ body{
 #Characters {
     width: 100%;
     height: auto;
+    /* Flipping the image horizontally to match the design requirements */
     transform: scaleX(-1); /* Flips the image horizontally */
 }
+
+.pieza.rotada img {
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+  
